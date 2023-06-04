@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid h-screen">
+<div class="jumbotron jumbotron-fluid">
       <div class="container">
   <div class="row">
         <div class="col-md-8">
