@@ -70,7 +70,6 @@
 	<script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 	<script src="<?= base_url('assets/js/datatables.js') ?>"></script>
 	<script src="<?= base_url('assets/js/datatables-b4.js') ?>"></script>
-	<?php include VIEWPATH. "/admin/include/database.php"; ?>
-
+	<?php include 'include/datatables.php'; ?>
 </body>
 </html>
