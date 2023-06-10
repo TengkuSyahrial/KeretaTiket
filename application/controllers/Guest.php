@@ -13,6 +13,7 @@ class Guest extends CI_Controller {
 	}
 
 	public function keHalamanKonfirmasi(){
+		$this->load->helper('form');
 		$data['judul'] = 'Halaman Konfirmasi';
 
 		if(isset($_GET['kode'])):
@@ -21,8 +22,10 @@ class Guest extends CI_Controller {
 			$data['detail'] = $this->M_Guest->cekKonfirmasi($data['no_tiket']->no_tiket)->result();
 			$tiket = $this->M_Guest->getTiketWhere($data['no_tiket']->no_tiket)->row();
 
+			
 			$data['bagian_a'] = $this->M_Guest->getKursiWhere('a',$data['no_tiket']->no_tiket,$tiket->id_jadwal)->result();
 			$data['bagian_b'] = $this->M_Guest->getKursiWhere('b',$data['no_tiket']->no_tiket,$tiket->id_jadwal)->result();
+			// return var_dump($data);
 		endif;
 
 		$this->load->view('guest/template/header', $data);

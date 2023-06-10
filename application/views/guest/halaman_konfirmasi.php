@@ -31,7 +31,7 @@
 				</div>
 				<div class="card-body">
 					<h1 class="text-center">
-						<?php if($no_tiket->status === '0' || $no_tiket->status === '1'): ?>
+						<?php if($no_tiket->status === '0' || $no_tiket->status == "1"): ?>
 							<i class="fa fa-times text-danger"></i> Belum Di Bayar
 						<?php elseif($no_tiket->status === '2'): ?>
 							<i class="fa fa-check text-success"></i> Sudah Di Bayar
@@ -255,7 +255,7 @@
 						<input id="foto" type="file" name="userfile" class="form-control" required>
 						<br>
 						<p class="d-none" id="pesan"></p>
-						<button id="btn_konfirmasi" type="submit" class="btn btn-block btn-dark">Kirim Bukti Pembayaran</button>
+						<button type="submit" class="btn btn-block btn-primary">Kirim Bukti Pembayaran</button>
 						<?= form_close(); ?>
 						<?php else: ?>
 						<?php endif; ?>

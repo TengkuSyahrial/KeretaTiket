@@ -11,7 +11,10 @@
 </head>
 <style>
 .jumbotron{
-	background:url('<?= base_url("assets/bg.png") ?>')
+	background:url('<?= base_url("assets/bg.png") ?>');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover	;
 }
 .bayangan{
 	text-shadow: 2px 3px 4px #3c3c3c;

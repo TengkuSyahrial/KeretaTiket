@@ -100,6 +100,6 @@
 	<script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 	<script src="<?= base_url('assets/js/datatables.js') ?>"></script>
 	<script src="<?= base_url('assets/js/datatables-b4.js') ?>"></script>
-	<?php include 'include/datatables.php'; ?>
+	<?php include APPPATH.'views\admin\include\database.php'; ?>
 </body>
 </html>

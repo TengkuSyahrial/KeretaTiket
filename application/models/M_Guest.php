@@ -103,7 +103,8 @@ class M_Guest extends CI_Model {
 		$this->db->where('kursi.bagian', $bagian);
 		$this->db->where('kursi.status', 0);
 		return $this->db->get('kursi');
-		
+
+		// return $this->db->where("nomor_tiket", $no_tiket)->where("bagian", $bagian)->get("penumpang");
 	}
 
 	public function updateKursi($id){
